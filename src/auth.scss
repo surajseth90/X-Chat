@@ -1,0 +1,105 @@
+.login-page-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #eeeeee;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 15px;
+
+  .login-wrapper {
+    width: 100%;
+
+    .logo-container {
+      width: 100%;
+      margin: auto;
+      margin-top: 40px;
+
+      p {
+        font-family: Cursive;
+        color: #242432;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  }
+
+  .user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: fill;
+    }
+  }
+
+  .login-form {
+    box-sizing: border-box;
+    height: max-content;
+    padding: 30px 0;
+    max-width: 500px;
+    border: 1px solid #eeeeee;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.06);
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    padding: 40px 80px;
+
+    .auth-header {
+      color: #212121;
+      font-family: Poppins;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 35px;
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    span {
+      color: #212121;
+      font-family: Poppins;
+      font-size: 15px;
+      letter-spacing: 0;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    .input-field-wrapper {
+      box-sizing: border-box;
+      margin: auto;
+      margin-top: 20px;
+
+      input {
+        padding: 8px 10px;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        background-color: #fafafa;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .login-page-container {
+    .login-form {
+      padding: 40px 20px !important;
+    }
+  }
+}
